@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneesh Mittal</title>
+    <link rel="stylesheet" href="aneesh_mittal.css">
+    <link rel="stylesheet" href="../../layout/navbar.css">
+    <link rel="stylesheet" href="../../layout/footer.css">
+</head>
+<body>
+   <!-- ---------------------------------------Navbar ------------------------------------>
+   <nav>
+    <div id="navbar">
+        <script>
+         fetch("../../layout/navbar.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+            });
+        </script>
+    </div>
+    </nav>
+
+
+
+  <header>
+    <h1>Meet Our Team</h1>
+    <p><a href="#">People</a></p>
+  </header>
+
+  <div class="nav1">
+    <a href="#">About</a>
+    <a href="#">Recognition</a>
+    <a href="#">Representative Matters</a>
+    <a href="#">Publications And Presentations</a>
+  </div>
+
+  <section class="content">
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="../data/aneesh_mittal.png" alt="Profile Image">
+      </div>
+      <div class="profile-details">
+        <h2>Aneesh Mittal</h2>
+        <p class="role">Founder | BRM LAW</p>
+        <p class="contact">T: +91 22 6636 5000 &nbsp;|&nbsp; E: <a href="#">Write To Me</a></p>
+        
+        <h3>Education</h3>
+        <ul>
+          <li>L.L.M., University Of Mumbai (2006)</li>
+          <li>Post Graduate Diploma In Patent Law, NMIMS University, Mumbai</li>
+          <li>B.E. (Electronics & Telecom.), University Of Pune (2001)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- <header>
+    <h1>Aneesh Mittal</h1>
+    <p><a href="#">People</a></p>
+  </header> -->
+
+  <!-- <div class="nav1">
+    <a href="#">About</a>
+    <a href="#">Recognition</a>
+    <a href="#">Representative Matters</a>
+    <a href="#">Publications And Presentations</a>
+  </div> -->
+
+  <section class="content">
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="../data/rakesh_singh.jpeg" alt="Profile Image">
+      </div>
+      <div class="profile-details">
+        <h2>Shri Rakesh Kumar</h2>
+        <p class="role">Strategic advisor </p>
+        <p class="contact">T: +91 22 6636 5000 &nbsp;|&nbsp; E: <a href="#">Write To Me</a></p>
+        
+        <h3>Education</h3>
+        <ul>
+          <li>L.L.M., University Of Mumbai (2006)</li>
+          <li>Post Graduate Diploma In Patent Law, NMIMS University, Mumbai</li>
+          <li>B.E. (Electronics & Telecom.), University Of Pune (2001)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!------------------- Footer ------------------------------------>
+    <footer>
+        <div id="footer">
+            <script>
+             fetch('../../layout/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('footer').innerHTML = data;
+                });
+            </script>
+            </div>
+    
+    </footer>
+</body>
+</html>

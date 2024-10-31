@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+
+<!-- Navbar Container -->
+<nav class="navbar">
+    <!-- Logo -->
+    <div class="navbar-logo">
+         <a href="../index.html"><img src="../data/logo.png" alt="Logo"></a>
+    </div>
+
+    <!-- Menu Items -->
+    <ul class="navbar-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#About" class="dropdown-toggle">About</a>
+            <ul class="dropdown-menu">
+                <li><a href="#about">Our Firm</a></li>
+                <li><a href="./aneesh_mittal.html">Founder</a></li>
+                <li><a href="./team.html">Our Team </a></li>
+            </ul>
+        </li>
+        <!-- Dropdown Menu for Services -->
+        <li class="dropdown">
+            <a href="#Practices" class="dropdown-toggle">Practices</a>
+            <ul class="dropdown-menu">
+                <li><a href="./arbitration.html">Arbitration</a></li>
+                <li><a href="./Real_estate.html">Real Estate</a></li>
+                <li><a href="./benami_law.html">Benami Law</a></li>
+                <li><a href="./Service_Matters.html">Service Matter</a></li>
+                <li><a href="./Matrimonial.html"> Matrimonial</a></li>
+                <li><a href="./Insolvency_And_Bankruptcy.html">Insolvency And Bankruptcy</a></li>
+                <li><a href="./Corporate_Litigation.html">Corporate Litigation</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="#">Carrers</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- JavaScript for Hamburger Toggle -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const navbarMenu = document.querySelector(".navbar-menu");
+
+    hamburger.addEventListener("click", () => {
+        navbarMenu.classList.toggle("active");
+        hamburger.classList.toggle("active"); // For hamburger icon animation
+    });
+});
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Singh</title>
+    <link rel="stylesheet" href="aneesh_mittal.css">
+    <link rel="stylesheet" href="../../layout/navbar.css">
+    <link rel="stylesheet" href="../../layout/footer.css">
+</head>
+<body>
+   <!-- ---------------------------------------Navbar ------------------------------------>
+   <nav>
+    <div id="navbar">
+        <script>
+         fetch("../../layout/navbar.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+            });
+        </script>
+    </div>
+    </nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+    <!------------------- Footer ------------------------------------>
+    <footer>
+        <div id="footer">
+            <script>
+             fetch('../../layout/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('footer').innerHTML = data;
+                });
+            </script>
+            </div>
+    
+    </footer>
+</body>
+</html>

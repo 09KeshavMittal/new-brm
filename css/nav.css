@@ -1,0 +1,182 @@
+
+
+/* ---------------------------------Navbar------------------------------------------------ */
+#navbar {
+  background: rgb(0, 0, 0); /* Black for background */
+  color: rgb(255, 223, 0); /* Golden Yellow for text */
+  position: relative;
+  top: 0;
+  height: 70px;
+  line-height: 60px;
+  width: 100%;
+}
+
+.nav-wrapper {
+  text-align: center;
+}
+
+/* testing dropdown  */
+
+
+@media(max-width: 768px) {
+    .nav-wrapper {
+      width: 90%;
+    }
+  }
+
+@media(max-width: 638px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+  } 
+
+/* Logo Styling */
+.logo {
+  float: left;
+  margin-top: 0.7%;
+  margin-left: 28px;
+  height: 50px;
+}
+
+.logo img {
+  height: 80%;
+}
+
+/* Navbar Links */
+#navbar ul {
+  display: inline-block;
+  float: right;
+  list-style: none;
+  margin-top: -2px;
+  text-align: right;
+  transition: transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+}
+
+@media(max-width: 640px) {
+    #navbar ul {
+      display: none;
+    }
+  }
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
+  color: rgb(255, 255, 255); /* White for navbar text */
+  display: block;
+  font-size: 0.7em;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+#navbar li a:hover {
+  color: rgb(255, 223, 0); /* Golden Yellow on hover */
+  transition: all 1s ease;
+}
+
+/* Animated Bottom Line */
+#navbar li a:before, #navbar li a:after {
+  content: '';
+  /* position: sticky; */
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: rgb(255, 255, 255); /* Wooden brown for bottom line */
+}
+
+#navbar li a:hover:before {
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+/* Overlay menu */
+.overlay-menu {
+  background: rgba(255, 255, 255, 0.95); /* Black with slight transparency */
+  color: rgb(255, 223, 0); /* Golden Yellow text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transition: transform 0.2s ease-out;
+}
+
+.overlay-menu ul {
+  text-align: center;
+}
+
+.overlay-menu li {
+  margin: 20px 0;
+}
+
+.overlay-menu li a {
+  font-size: 1.8em;
+  letter-spacing: 4px;
+  color: rgb(255, 223, 0); /* Golden Yellow text */
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.overlay-menu li a:hover {
+  color: rgb(85, 53, 21); /* Wooden Brown on hover */
+}
+
+/* Menu Icon */
+@media(max-width: 640px) {
+  .menuIcon {
+    cursor: pointer;
+    display: block;
+    position: sticky;
+    right: 15px;
+    top: 20px;
+    height: 23px;
+    width: 27px;
+    z-index: 12;
+  }
+
+  /* Icon Bars */
+  .icon-bars {
+    background: rgb(255, 223, 0); /* Golden Yellow bars */
+    position: sticky;
+    left: 1px;
+    top: 45%;
+    height: 2px;
+    width: 20px;
+    transition: 0.4s;
+  }
+
+  .icon-bars::before, .icon-bars::after {
+    background: rgb(255, 223, 0); /* Golden Yellow for before and after */
+  }
+
+  /* Toggle Menu Icon */
+  .menuIcon.toggle .icon-bars {
+    top: 5px;
+    transform: translate3d(0, 5px, 0) rotate(135deg);
+    transition-delay: 0.1s;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .menuIcon.toggle .icon-bars::after {
+    top: 10px;
+    transform: translate3d(0, -10px, 0) rotate(-270deg);
+    transition-delay: 0.1s;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+

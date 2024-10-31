@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIMONIAL</title>
+    
+    <link rel="stylesheet" href="../layout/navbar.css">
+    <link rel="stylesheet" href="practice_area.css">
+    <link rel="stylesheet" href="../layout/footer.css">
+    <script src="../scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div id="navbar">
+            <script>
+             fetch("../layout/navbar.html") 
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+                });
+            </script>
+        </div>
+    </nav>
+        
+    <div class="container">
+        <div class="image-top">
+            <img src="https://plus.unsplash.com/premium_photo-1661769577787-9811af17f98d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGF3fGVufDB8fDB8fHww" alt="" class="image-top">
+        </div>
+        <div class="content">
+            <h1 class="heading">REAL ESTATE</h1>
+            <p class="paragraph">
+                Property development is a prominent market and one of the largest employers in the nation. In recent years, the enactment of the Real Estate (Regulation and
+Development) Act, 2016, as amended from time to time, has changed the way in which builders and developers had been functioning over the years, by
+putting accountability on their shoulders, thereby making real estate purchases by buyers transparent. Further, new revenue models have made real estate
+players seek legal advice much more frequently than before.
+</p>
+<p class="paragraph">
+    Professionals at Sarvaya Legal have a rich experience in the real estate sector and provide advice on compliance of RERA and rules, delay in possession,
+completion of projects and drafting and complaints and appeals before the RERA Tribunal and RERA Appellate, the District and State Consumer Forums and
+also in in the National Consumer Dispute Redressal Forum (NCDRC) in addition to the High Court and Supreme Court. The Firm also represents real estate
+developers and buyers before the Real Estate Regulatory Authority in various proceedings under RERA.
+</p>
+<p class="paragraph"> The Firm also assists its clients in documentation and registration of the same as well as registration of real estate projects with the Authority.</p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    
+    <!------------------- Footer -->
+    <div id="footer">
+    <script>
+     fetch('../layout/footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.image-top {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    /* margin-bottom: 20px; */
+}
+
+.image-top img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    
+    /* margin: 40px auto; */
+    /* padding: 20px; */
+    /* background-color: #f9f9f9; */
+    /* border: 1px solid #ddd; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.content {
+    padding: 20px;
+    background-color: rgb(241, 246, 249);
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.list-item:before {
+    content: "\2022";
+    color: #333;
+    font-size: 18px;
+    margin-right: 10px;
+}

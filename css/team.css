@@ -1,0 +1,121 @@
+/*------------------- Team Section Styling -------------------*/
+
+.team-section {
+  padding: 70px 0px;
+}
+
+.team-container {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px; /* Space between cards */
+  margin: 40px 60px; /* Adds margins on the left and right */
+}
+
+.team-container-2 {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 70px; /* Space between cards */
+  margin: 40px 50px; /* Adds margins on the left and right */
+}
+
+/* Card Styling */
+.team-card {
+  flex: 1 1 calc(30% - 40px); /* Slightly smaller width for cards */
+  max-width: calc(30% - 140px); /* Reduce width to make cards smaller */
+  margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  height: 400px; /* Reduce card height */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 60%; /* Reduce image height for smaller cards */
+  object-fit: contain; /* Ensure the entire image fits within the container */
+  background-color: #ffffff; /* White background for the image section */
+  border-bottom: 1px solid #ddd; /* Separate the image section */
+}
+
+.card-body {
+  padding: 3px;
+  height: 35%;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.card-title {
+  font-size: 1.1rem; /* Slightly smaller title */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.card-text {
+  font-size: 0.9rem; /* Slightly smaller text */
+  color: #666;
+  margin-bottom: 2px;
+}
+
+
+
+.card-img-top{
+  height: 70%;
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .team-card {
+      flex: 1 1 calc(45% - 40px); /* Smaller cards on medium screens */
+      max-width: calc(45% - 40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .team-container {
+      margin: 0 15px; /* Smaller left-right margins for mobile view */
+  }
+  .team-container-2 {
+    margin: 0 15px; /* Smaller left-right margins for mobile view */
+}
+
+  .team-card {
+      flex: 1 1 100%; /* Full-width cards on small screens */
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .card {
+      height: 300px; /* Reduced height on mobile view */
+  }
+
+  .card img {
+      height: 150px; /* Reduced image height for mobile view */
+  }
+}

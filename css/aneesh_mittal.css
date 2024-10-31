@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .content {
+    font-family: Arial, sans-serif;
+    color: #003366;
+    
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #003366;
+  }
+  
+  header p a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .nav1 {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .nav1 a {
+    color: #003366;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  nav1 a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 100px;
+    
+  }
+  
+  .profile-card {
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    /* max-width: 1000px; */
+    width: 100%;
+  }
+  
+  .profile-image img {
+    width: 200px;
+    
+  }
+  
+  .profile-details {
+    color: #ffffff;
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    flex: right;
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-bottom: -100px;
+  }
+  
+  .profile-details h2 {
+    font-size: 1.5em;
+  }
+  
+  .profile-details .role {
+    color: #77AADD;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .profile-details .contact {
+    margin: 15px 0;
+  }
+  
+  .profile-details .contact a {
+    color: #77AADD;
+    text-decoration: none;
+  }
+  
+  .profile-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .profile-details ul li {
+    padding: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-details {
+      text-align: center;
+      padding: 15px;
+    }
+  }
+  
+
+
+/* 
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  font-family: Arial, sans-serif;
+  color: #003366;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #003366;
+}
+
+header p a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav1 a {
+  color: #003366;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav1 a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.profile-card {
+  display: flex;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 100%;
+}
+
+.profile-image img {
+  max-width: 250px;
+
+}
+
+.profile-details {
+  padding-left: 20px;
+  color: #ffffff;
+  background-color: #003366;
+  padding: 20px;
+
+  flex: left;
+  margin-left: 20%;
+}
+
+.profile-details h2 {
+  font-size: 1.5em;
+}
+
+.profile-details .role {
+  color: #77AADD;
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.profile-details .contact {
+  margin: 15px 0;
+}
+
+.profile-details .contact a {
+  color: #77AADD;
+  text-decoration: none;
+}
+
+.profile-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.profile-details ul li {
+  padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-details {
+    text-align: center;
+    padding: 15px;
+  }
+}
+ */

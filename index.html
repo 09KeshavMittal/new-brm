@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Brm law.in </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="../scripts.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- Go to Top -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Add Bootstrap CDN for easier styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- ---------------------------------------Navbar ------------------------------------>
+
+<!-- Navbar Container -->
+<nav class="navbar">
+    <!-- Logo -->
+    <div class="navbar-logo">
+         <img src="../data/logo.png" alt="Logo">
+    </div>
+
+    <!-- Menu Items -->
+    <ul class="navbar-menu">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+            <a href="#About" class="dropdown-list">About</a>
+            <ul class="dropdown-menu">
+                <li><a href="#about">Our Firm</a></li>
+                <li><a href="./aneesh_mittal.html">Founder</a></li>
+                <li><a href="../team.html">Our Team </a></li>
+            </ul>
+        </li>
+        <!-- Dropdown Menu for Services -->
+        <li class="dropdown">
+            <a href="#Practices" class="dropdown-list">Practices</a>
+            <ul class="dropdown-menu">
+                <li><a href="../html/arbitration.html">Arbitration</a></li>
+                <li><a href="../html/Real_estate.html">Real Estate</a></li>
+                <li><a href="../html/benami_law.html">Benami Law</a></li>
+                <li><a href="../html/Service_Matters.html">Service Matter</a></li>
+                <li><a href="../html/Matrimonial.html"> Matrimonial</a></li>
+                <li><a href="../html/Insolvency_And_Bankruptcy.html">Insolvency And Bankruptcy</a></li>
+                <li><a href="../html/Corporate_Litigation.html">Corporate Litigation</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="#">Carrers</a></li>
+        <li><a href="../html/contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- JavaScript for Hamburger Toggle -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const navbarMenu = document.querySelector(".navbar-menu");
+
+    hamburger.addEventListener("click", () => {
+        navbarMenu.classList.toggle("active");
+        hamburger.classList.toggle("active"); // For hamburger icon animation
+    });
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------- disclaimer ----------------------------------->
+
+    <!-- Disclaimer Modal -->
+    <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="disclaimerModalLabel">Disclaimer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" disabled></button>
+                </div>
+                <div class="modal-body" style="overflow-y: hidden;">
+                    <p class="text-center"><strong>Disclaimer</strong></p>
+                    <p>
+                        The rules of the Bar Council of India prohibit law firms and advocates from soliciting work or advertising in any form. By clicking on 'l Agree',
+                        the user (You) acknowledges and accepts the following:-
+                        a. This website does not include any form of advertisement, personal communication, or invitation from Sarvaya Legal (the "Firm") or its
+                        lawyers to solicit any work or services;
+                        b. The user wishes to gain more information about the Firm and its attorneys for her/his own knowledge and use;
+                        c. Any information obtained or materials downloaded from this website would be at user's own free will and the Firm shall not be liable for
+                        the consequences of any action taken by the user based on the information so gathered from this website;
+                        d. Any transmission or use of this website or its content does not create a lawyer-client relationship between the Firm and the user;
+                        e. The Firm may collect your personal data when you:-
+                        a. fill in a form available on this website; and
+                        b. fill in your application for an internship opportunity or other position at the Firm.
+                        The information provided on this website has been made available solely at the user's request and is not to be construed as legal advice by
+                        the Firm under any circumstances whatsoever.
+                        I Agree
+                        I Disagree</p>
+                    <p>By clicking "Accept," you agree to the terms outlined above.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="acceptButton">Accept</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" disabled>Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="home"></div>
+
+
+    <!-- Landing Page -->
+    <section id="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.istockphoto.com/id/1485724241/photo/law-school-concept.jpg?s=612x612&w=0&k=20&c=Lvbkgih5KqSWWlBRcTpRIL8gGxCjxXN95_LDmBxwsQI=" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="text-box">
+                            <h5>First Image Text</h5>
+                            <p>Brief description for the first image.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw29ez4GFLG7aCs2GHNgR2rovsK01zBp617Q&s" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="text-box">
+                            <h5>Second Image Text</h5>
+                            <p>Brief description for the Second image.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1485724241/photo/law-school-concept.jpg?s=612x612&w=0&k=20&c=Lvbkgih5KqSWWlBRcTpRIL8gGxCjxXN95_LDmBxwsQI=" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="text-box">
+                            <h5>Third Image Text</h5>
+                            <p>Brief description for the second image.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://media.istockphoto.com/id/1485724241/photo/law-school-concept.jpg?s=612x612&w=0&k=20&c=Lvbkgih5KqSWWlBRcTpRIL8gGxCjxXN95_LDmBxwsQI=" alt="About Us Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>About BRM LAW</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit natus dolorem necessitatibus repellat earum magnam nesciunt dolor quo ullam deserunt, tempora laborum blanditiis quidem repudiandae, minima corrupti ratione expedita corporis cupiditate voluptatum qui! Obcaecati ex minus nemo ipsam accusamus, possimus necessitatibus perspiciatis atque nobis nostrum inventore distinctio, veniam doloribus assumenda in architecto, beatae sequi alias commodi maiores dolorem quia quam quo. Unde cumque ab cum inventore consequuntur, exercitationem tenetur beatae fugiat labore illum placeat quibusdam temporibus sequi nesciunt laudantium esse commodi dicta assumenda reiciendis impedit! In voluptate, neque optio tempore quod, maiores reprehenderit aliquam  illum aspernatur dolorem error dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eum, veritatis eius aliquid quis doloremque recusandae? Iusto neque reprehenderit modi repellat veritatis cum? Vel, repellendus labore cumque sint enim deleniti? Necessitatibus cumque quo nihil maiores molestias deserunt esse eaque cum.We are a leading law firm offering top-tier legal services. Our experienced team specializes in corporate, civil, and criminal law.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!------------------------------ Practice Areas --------------------------------------->
+<h2 id = "practices" class="text-center">Practices</h2> <!-- Centered Heading -->
+<div  class="areas-of-practice-section">
+    <div class="image-container">
+        <img src="../data/law-practitioner.jpg" alt="Business people in motion">
+    </div>
+    <div class="practice-list">
+        <div class="list-column">
+            <ul>
+                <li><a href="./html/arbitration.html">Arbitration</a></li>
+                <li><a href="./html/benami_law.html">Benami Laws</a></li>
+                <li><a href="./html/Corporate_Litigation.html">Commercial Litigation</a></li>
+                <li><a href="./html/Insolvency_And_Bankruptcy.html">Insolvency And Bankruptcy</a></li>
+                <li><a href="./html/Matrimonial.html">Matrimonial</a></li>
+                
+            </ul>
+        </div>
+        <div class="list-column">
+            <ul>
+                <li><a href="./html/Insolvency_And_Bankruptcy.html">Insolvency</a></li>
+                <li><a href="#">Intellectual Property</a></li>
+                <li><a href="./html/Service_Matters.html">Service Matters</a></li>
+                <li><a href="./html/Real_estate.html">Real Estate</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!------------------- Footer ------------------------------------>
+    <footer>
+        <div id="footer">
+            <script>
+             fetch('./html/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('footer').innerHTML = data;
+                });
+            </script>
+            </div>
+    
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+
+
+     <!-- Scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+         // Show the disclaimer modal on page load
+         window.onload = function() {
+             const hasAccepted = localStorage.getItem('disclaimerAccepted');
+             if (!hasAccepted) {
+                 const modal = new bootstrap.Modal(document.getElementById('disclaimerModal'));
+                 modal.show();
+             }
+         };
+ 
+         // Prevent modal from being closed by the close button or backdrop
+         const modalElement = document.getElementById('disclaimerModal');
+         modalElement.addEventListener('hide.bs.modal', function (event) {
+             const hasAccepted = localStorage.getItem('disclaimerAccepted');
+             if (!hasAccepted) {
+                 event.preventDefault(); // Prevent the modal from closing
+             }
+         });
+ 
+         // Accept button functionality
+         document.getElementById('acceptButton').onclick = function() {
+             localStorage.setItem('disclaimerAccepted', 'true'); // Store acceptance in local storage
+             const modal = bootstrap.Modal.getInstance(modalElement);
+             modal.hide(); // Hide the modal
+         };
+     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Go to Top  -->
+       <!-- Go to Top Button -->
+    <a href="#" class="go-to-top" id="goToTopBtn">
+        <i class="fa fa-arrow-up"></i> <!-- Arrow Symbol -->
+    </a>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
